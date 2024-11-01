@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "kevinbatdorf/xeet-wp",
+	"version": "0.1.0",
+	"title": "Static Xeets for Twitter",
+	"category": "embed",
+	"description": "Embed x.com Tweets without an iframe",
+	"attributes": {
+		"xeetId": {
+			"type": "string"
+		},
+		"xeetData": {
+			"type": "object"
+		},
+		"theme": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "xeet-wp",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./front/front.js"
+}
